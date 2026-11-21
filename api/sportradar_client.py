@@ -39,7 +39,7 @@ class SportRadarClient:
     """
 
     def __init__(self, api_key: Optional[str] = None, base_url: Optional[str] = None):
-        self.api_key = (api_key or SPORTRADAR_API_KEY).strip()
+        self.api_key = (api_key if api_key is not None else SPORTRADAR_API_KEY).strip()
         self.base_url = (base_url or SPORTRADAR_BASE_URL).rstrip("/")
         self.last_request_time = 0.0
         self.session = requests.Session()
