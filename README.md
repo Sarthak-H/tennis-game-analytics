@@ -332,12 +332,4 @@ Open your browser at `http://localhost:8501`.
 pytest -v tests/
 ```
 
----
-
-## 10. Future Enhancements
-
-- **Real-Time Live Score Tracking**: Implement websocket ingestion for point-by-point live match telemetry.
-- **Historical Head-to-Head**: Store multi-season match results to enable predictive player matchup analytics.
-- **Player Performance Modeling**: Integrate machine learning models for match outcome and tournament win probability estimation.
-- **REST API Serving**: Expose database insights via FastAPI endpoints for external consumers.
 
